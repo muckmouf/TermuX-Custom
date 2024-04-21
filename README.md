@@ -34,9 +34,9 @@ Download from F-Droid application or Github.com, direct links below. <br />
 ## Getting Started
 To get started, simply follow the provided commands to update and upgrade your TermuX environment, clone the TermuX Custom repository, and execute the setup script to apply the customizations. This repository is intended for educational purposes and does not endorse any malicious activities.
 
-#### FOR A ONE-LINER COPY & PASTE COMMAND SKIP PAST STEP 6 #####
+#### FOR A ONE-LINER COPY & PASTE COMMAND SKIP PAST BELOW STEP 6 #####
 
-Step 1: Update and Upgarde your package lists with to latest versions:
+Step 1: Update and Upgrade your package lists
     ```
     apt update && apt upgrade
     ```
