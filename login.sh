@@ -3,8 +3,8 @@
 bash banner.sh
 echo
 
-read -p $'\e[1;32m  Enter \033[33mUsername \033[37mfor \033[32mLogin:\e[0m ' username                
-read -p $'\e[1;32m  Enter \033[33mPassword \033[37mfor \033[32mLogin:\e[0m ' password 
+read -p $'\e[1;32m \033[33m \033[37m \033[32mUSER:\e[0m ' username                
+read -p $'\e[1;32m  \033[33m \033[37m \033[32mPASS:\e[0m ' password 
 echo
 echo
 read -p $'\033[1m\033[32m  Your \033[0mShell \033[38;5;209mName\033[31m: \033[33m\033[1m ' names
@@ -25,38 +25,29 @@ echo -e "\e[1;32m
 ▒▓█         ▒▓█      ▓█ ▒▓█   ▓████  ▒▓█   ▒▓█     ▓█    
 ▒▓█         ▒▓█      ▓█ ▒▓█      ▓█   ▒▓█   ▒▓█     ▓█    
 ▒▓████████ ▒▓████████ ▒▓████████   ▒▓█   ▒▓█     ▓█    
-                                                                                                          
 
-\033[31m           ────────────────────────────
-\033[33m               Login To \033[32mContinue
-\033[31m           ────────────────────────────
-
-
+                                                                        
 \e[0m"
 echo
-read -p $'       \e[33m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mUSERNAME FOR LOGIN:\033[32m ' user
-read -s -p $'       \e[32m\033[1m\033[33m[\033[31m+\033[33m] \033[37mINPUT \033[33mPASSWORD FOR LOGIN:\033[33m ' pass                                                
-if [[ \$pass == $password && \$user == $username ]]; then
+read -p $'       \e[33m\033[1m\033[33m[\033[31m+\033[33m] \033[37m \033[33mUSER:\033[32m ' user
+read -s -p $'       \e[32m\033[1m\033[33m[\033[31m+\033[33m] \033[37m \033[33mPASS:\033[33m ' pass                                                
+if [ "$pass" == "$password" ] || [ "$user" == "$username" ]; then
 sleep 3
-clear
-cd $HOME
-cd TermuX-Custom
-cd Song
-python sound_effect.py
 clear
 cd $HOME 
 echo -e "\033[1m\033[33m
 
 
-██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗ 
-██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
-███████║███████║██║     █████╔╝ █████╗  ██████╔╝
-██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗
-██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝                                                                    
+
+
+             ██████╗  ██████╗  ██╗   ██╗  ██████╗  ██╗   ██╗ ██████╗  ██████╗  ██████╗
+             ██╔══██╗ ╚════██╗ ██║   ██║ ██╔═████╗ ██║   ██║ ██╔══██╗ ╚════██╗ ██╔══██╗
+             ██║  ██║  █████╔╝ ██║   ██║ ██║██╔██║ ██║   ██║ ██████╔╝  █████╔╝ ██║  ██║
+             ██║  ██║  ╚═══██╗ ╚██╗ ██╔╝ ████╔╝██║ ██║   ██║ ██╔══██╗  ╚═══██╗ ██║  ██║
+             ██████╔╝ ██████╔╝  ╚████╔╝  ╚██████╔╝ ╚██████╔╝ ██║  ██║ ██████╔╝ ██████╔╝
+             ╚═════╝  ╚═════╝    ╚═══╝    ╚═════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═════╝  ╚═════╝
 
 "
-echo -e  "     \e[1m\e[32m▂▃▄▅▆▇▓▒░ \033[1mCoded By \e[33mCyberAK \e[1m\e[32m░▒▓▇▆▅▄▃▂"
 cd $HOME
 echo -e "   \033[1m\033[33m]\033[31m──────────────────────────────────────\033[33m["
 echo 
@@ -84,7 +75,7 @@ cd TermuX-Custom
 cd
 else
 echo ""
-echo -e "\e[1;31m  You Entered wrong Details! 
+echo -e "\e[1;31m  Try Again.
 \e[0m"
 sleep 1
 cmatrix -L
@@ -94,7 +85,7 @@ LOGIN
 echo 
 echo
 echo 
-echo -e "\033[1m\e[1;32m Your Termux is \033[33mReady \n
-       So please \033[31mExit \033[37mand \033[32mLogin.\e[0m"
+echo -e "\033[1m\e[1;32mTermux \033[33mReady \n
+       \033[31mExit \033[37mand \033[32mLogin.\e[0m"
 echo
 echo
